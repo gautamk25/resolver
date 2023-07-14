@@ -1,0 +1,25 @@
+<div class="myContainer" style="text-align: center;">
+
+    <div class="div" style="display: flex; justify-content: space-between; margin: 20px 300px;">
+        <input class="form-control" type="text" #getVal placeholder="Enter something"> &nbsp;
+        <button class="btn btn-success" (click)="getCityName(getVal)">Submit</button>
+    </div>
+
+    <div class="card text-bg-primary mb-3" style="max-width: 18rem;             margin-left: 415px; margin-top: 50px;">
+        <div class="card-header">
+            <h2>{{ city }}</h2>
+            <p><img src="{{ iconURL }}" alt=""></p>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Summary: {{ myWeather.weather[0].main }}</p>
+            <p class="card-text">Temperature: {{ myWeather.main.temp }} °C</p>
+            <p class="card-text">Feels like: {{ myWeather.main.feels_like }} °C</p>
+            <p class="card-text">Pressure: {{ myWeather.main.pressure }} hPa</p>
+            <p class="card-text">Humidity: {{ myWeather.main.humidity }}%</p>
+        </div>
+    </div>
+</div>
+
+<div class="box" style="height: 70px; width: 300px; text-align: center; border: 1px dotted black;">
+    <h1>Hello all,</h1>
+</div>
